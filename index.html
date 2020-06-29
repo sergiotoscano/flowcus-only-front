@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,500' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flowcus</title>
+</head>
+
+<body>
+    <div class="divCountdown">
+        <h1 class="display-2">Flowcus</h1>
+        <h3 class="h6">because flow requires focus</h3>
+        <div class="timer">
+            <p class="minutes" id="minutes">25</p>
+            <p class="seconds" id="seconds">00</p>
+            <div class="add">
+                <input class="btn btn-light button" type="button" value="+" id="addButton">
+                <input class="btn btn-light button" type="button" value="-" id="subButton">
+            </div>
+        </div>
+            <div class="timerText">
+                <p class="minutesText">Minutes</p>
+                <p class="secondsText">Seconds</p>
+            </div>
+            <input class="btn btn-dark button" type="button" value="start" id="startButton">
+            <input class="btn btn-light button" type="button" value="pause" id="pauseButton">
+           <!-- <input type="text" id="minutesInput" placeholder="Minutes to countdown">-->
+            <input class="btn btn-light button" type="button" value="reset" id="resetButton">
+            <br></br>
+            <br></br>
+    </div>
+    <div class="divList">
+        <h1>Daily Checklist</h1>
+        <h2>Hit List</h2>
+        <input  type="text" placeholder="Insert task here" id="addItemInput">
+        <input type="button" value="Add item" id="addItemButton">
+        <ul></ul>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  font-family: nunito;
+}
+
+
+.divCountdown {
+  color: white;
+  background-color: rgb(180, 186, 192);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .4em;
+  letter-spacing: 15px;
+  padding: 40px 0px 20px;
+}
+
+.timer, .timerText {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+.secondsText {
+  margin-left: 50px;
+}
+.h6 {
+  margin-bottom: 70px;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+}
+.minutes, .seconds {
+  margin-left: 10px;
+  color:rgb(90, 90, 90);
+  font-size: 7em;
+  font-family: roboto;
+  font-weight: 900;
+  letter-spacing: 5px;
+  display: inline;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.button {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 3.2em;
+  margin-top: 30px;
+  border-color: rgb(100, 102, 97);
+  margin-bottom: 60px;
+}
+
+#resetButton {
+  width: 70px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 2.5em;
+  }
+
+#addButton, #subButton {
+  width: 30px;
+  height: 30px;
+  font-size: 3em;
+  display: block;
+  border-radius: 100%;
+  margin: 15px 0 10px 10px;
+  padding: 0;
+  font-family: roboto;
+  font-weight: 100;
+}
+  
+
+
+
+
+
+
+
+
+
+
+.divList {
+  margin-bottom: 300px;
+}
+
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+.checkbox:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 2px solid lightseagreen;
+  border-radius: 25%;
+  background-color: white;
+}
+.checkbox:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 13px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+
+/*
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  display: block;
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  display: inline-block;
+*/
+
