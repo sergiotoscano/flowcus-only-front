@@ -13,37 +13,46 @@
 </head>
 
 <body>
-    <div class="divCountdown">
-        <h1 class="display-2">Flowcus</h1>
-        <h3 class="h6">because flow requires focus</h3>
-        <div class="timer">
-            <p class="minutes" id="minutes">25</p>
-            <p class="seconds" id="seconds">00</p>
-            <div class="add">
-                <input class="btn btn-light button" type="button" value="+" id="addButton">
-                <input class="btn btn-light button" type="button" value="-" id="subButton">
+    <h1 class="display-2" id="h1">Flowcus</h1>
+    <h3 class="h6">because flow requires focus</h3>
+    <div class="container">    
+        <div class="row">
+            <div class="timer col-lg-6 align-items-center">
+                <p class="pr-4">your pomodoro clock</p>
+                <div class="clockadd row align-items-center justify-content-center">
+                    <div class="timerNumbers">
+                        <p class="minutes" id="minutes">25</p>
+                        <p class="seconds" id="seconds">00</p>
+                    </div>
+                    <div class="timerAdd sm-6">
+                        <input class="btn btn-light button addButton" type="button" value="+" id="addButton">
+                        <input class="btn btn-light button subButton" type="button" value="-" id="subButton">
+                    </div>
+                </div>
+                <div class="timerText row justify-content-center">
+                    <p class="minutesText col">Minutes</p>
+                    <p class="secondsText col">Seconds</p>
+                </div>
+                <div class="timerButtons">
+                    <input class="btn btn-success button" type="button" value="start" id="startButton">
+                    <input class="btn btn-danger button" type="button" value="pause" id="pauseButton">
+                    <input class="btn btn-light button" type="button" value="reset" id="resetButton">
+                </div>
+            </div>    
+            <div class="divList col-lg">
+                <p class="text-left pl-5">your hit list for today</p>
+                <div class="row addItemContainer">
+                    <input  class="form-control col-9" type="text" placeholder="Insert task here" id="addItemInput">
+                    <input class="btn btn-outline-light col" type="button" value="Add item" id="addItemButton">
+                </div>    
+                <div class="row">
+                    <div class="col-7">
+                        <ul></ul>
+                    </div>
+                </div>
             </div>
         </div>
-            <div class="timerText">
-                <p class="minutesText">Minutes</p>
-                <p class="secondsText">Seconds</p>
-            </div>
-            <input class="btn btn-dark button" type="button" value="start" id="startButton">
-            <input class="btn btn-light button" type="button" value="pause" id="pauseButton">
-           <!-- <input type="text" id="minutesInput" placeholder="Minutes to countdown">-->
-            <input class="btn btn-light button" type="button" value="reset" id="resetButton">
-            <br></br>
-            <br></br>
     </div>
-    <div class="divList">
-        <h1>Daily Checklist</h1>
-        <h2>Hit List</h2>
-        <input  type="text" placeholder="Insert task here" id="addItemInput">
-        <input type="button" value="Add item" id="addItemButton">
-        <ul></ul>
-    </div>
-
-
     <script src="app.js"></script>
 </body>
 </html>

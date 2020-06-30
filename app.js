@@ -118,6 +118,7 @@ function printCountDown () {
 addItemButton.addEventListener('click', () => {
     let ul = document.getElementsByTagName('ul')[0]; // FIRST SELECT THE PARENT ELEMENT. if there were 2 ul, and you wanted to select the second, should choose [1] second
     let li = document.createElement('li'); //  actually create the new element
+    li.className = "task";
     li.textContent = addItemInput.value; // give it the value you want. in this case an users input
     ul.appendChild(li); // appending the new element as a child of the selected parent actually adds (displays on screen) the new alement
     addItemInput.value = ""; // this is just to erase the input text field after the element is added
