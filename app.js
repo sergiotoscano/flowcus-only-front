@@ -140,9 +140,15 @@ for (let i = 0; i < listUlChildren.length; i += 1) {
 
 //adds to every new task added to the page the three buttons up, down and remove
 function attachButtonsToListItems(li) {
+
+    /*let divButtons = document.createElement('div');
+    divButtons.className = "divButtons col-3";
+    let ul = li.parentNode;
+    let ulP = ul.parentNode;
+    ulP.appendChild(divButtons);*/
+
     let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.id = 'checkbox';
     checkbox.className = 'checkbox';
     li.appendChild(checkbox);
 

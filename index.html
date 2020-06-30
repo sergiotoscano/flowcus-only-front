@@ -19,7 +19,7 @@
         <div class="row">
             <div class="timer col-lg-6 align-items-center">
                 <p class="pr-4">your pomodoro clock</p>
-                <div class="clockadd row align-items-center justify-content-center">
+                <div class="clockadd row pl-2 align-items-center justify-content-center">
                     <div class="timerNumbers">
                         <p class="minutes" id="minutes">25</p>
                         <p class="seconds" id="seconds">00</p>
@@ -33,7 +33,7 @@
                     <p class="minutesText col">Minutes</p>
                     <p class="secondsText col">Seconds</p>
                 </div>
-                <div class="timerButtons">
+                <div class="timerButtons pr-4">
                     <input class="btn btn-success button" type="button" value="start" id="startButton">
                     <input class="btn btn-danger button" type="button" value="pause" id="pauseButton">
                     <input class="btn btn-light button" type="button" value="reset" id="resetButton">
@@ -41,14 +41,12 @@
             </div>    
             <div class="divList col-lg">
                 <p class="text-left pl-5">your hit list for today</p>
-                <div class="row addItemContainer">
-                    <input  class="form-control col-9" type="text" placeholder="Insert task here" id="addItemInput">
-                    <input class="btn btn-outline-light col" type="button" value="Add item" id="addItemButton">
-                </div>    
-                <div class="row">
-                    <div class="col-7">
-                        <ul></ul>
-                    </div>
+                <div class="row addItemContainer pr-6">
+                    <input  class="form-control col-7 pl-2" type="text" placeholder="Insert task here" id="addItemInput">
+                    <input class="btn btn-outline-light col-3" type="button" value="Add item" id="addItemButton">
+                </div> 
+                    <ul class="row"></ul>
+<div></div>
                 </div>
             </div>
         </div>
